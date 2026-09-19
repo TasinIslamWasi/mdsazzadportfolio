@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Md Sazzad Hossen | IT Officer, AI & IoT Researcher, Full-Stack Developer</title>
+  <meta name="title" content="Md Sazzad Hossen | IT Officer, AI & IoT Researcher, Full-Stack Developer">
+  <meta name="description" content="Portfolio of Md Sazzad Hossen - IT Officer at Nirjaas Group, CSE Graduate from City University, Researcher with 6 published papers in IoT, Machine Learning, and Computer Vision.">
+  <meta name="keywords" content="Md Sazzad Hossen, Sazzad Hossen, IT Officer, Portfolio, Machine Learning, IoT, Computer Vision, City University, Nirjaas Group, Python, Laravel">
+  <meta name="author" content="Md Sazzad Hossen">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md Sazzad Hossen | Portfolio">
+  <meta property="og:description" content="Explore research publications, AI/IoT projects, and IT engineering experience of Md Sazzad Hossen.">
+  <meta property="og:image" content="assets/images/profile.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient luminous background glow layers (from background folder) -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="ambient-glow glow-4"></div>
+
+  <!-- Interactive Dynamic Particle Constellation Canvas (from background folder) -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-badge">SH</span>
+        <span class="brand-name">Sazzad<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#publications" class="nav-link">Publications <span class="nav-count-badge">6</span></a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+
+        <!-- Download CV Button -->
+        <a href="Md_Sazzad_Hossen_CV.pdf" download="Md_Sazzad_Hossen_CV.pdf" class="btn btn-outline btn-sm nav-cv-btn" id="nav-download-cv">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Download CV</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Open mobile menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#publications" class="mobile-nav-link">Publications (6)</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education & Awards</a></li>
+        <li><a href="#recommendations" class="mobile-nav-link">Recommendations</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="Md_Sazzad_Hossen_CV.pdf" download="Md_Sazzad_Hossen_CV.pdf" class="btn btn-primary btn-full">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Complete CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-indicator"></span>
+            <span>Available for Industry Roles & Academic Research</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Md Sazzad Hossen</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">I am a </span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-bio">
+            B.Sc. in Computer Science & Engineering graduate and active <strong>IT Officer at Nirjaas Group</strong>. 
+            Passionate about architecting robust <strong>Machine Learning models</strong>, non-invasive <strong>Biomedical & IoT Sensors</strong>, 
+            and scalable <strong>Full-Stack Web Systems</strong> with 6 peer-reviewed research publications.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#publications" class="btn btn-primary" id="hero-btn-pub">
+              <i class="fa-solid fa-book-journal-whills"></i>
+              <span>View Publications</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary" id="hero-btn-proj">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Featured Projects</span>
+            </a>
+            <a href="Md_Sazzad_Hossen_CV.pdf" download class="btn btn-outline" id="hero-btn-cv">
+              <i class="fa-solid fa-download"></i>
+              <span>Get CV (PDF)</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social-links">
+            <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="social-icon-btn scholar-btn" title="Google Scholar Profile" id="social-scholar">
+              <i class="fa-brands fa-google-scholar"></i>
+              <span>Google Scholar</span>
+            </a>
+            <a href="https://github.com/sazzad125" target="_blank" rel="noopener noreferrer" class="social-icon-btn github-btn" title="GitHub Profile" id="social-github">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/md-sazzad-hossen-931114211/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin-btn" title="LinkedIn Profile" id="social-linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:mdsazzadhossen31200@gmail.com" class="social-icon-btn email-btn" title="Send Email" id="social-email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-ring-outer"></div>
+            <div class="profile-ring-inner"></div>
+            
+            <div class="profile-image-box">
+              <img src="assets/images/profile.png" alt="Md Sazzad Hossen" class="profile-img" id="hero-profile-image">
+            </div>
+
+            <!-- Orbiting Badges -->
+            <div class="tech-badge badge-ai" title="AI & Deep Learning">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI & ML</span>
+            </div>
+            <div class="tech-badge badge-iot" title="IoT & Sensors">
+              <i class="fa-solid fa-microchip"></i>
+              <span>IoT Systems</span>
+            </div>
+            <div class="tech-badge badge-web" title="Full-Stack Development">
+              <i class="fa-solid fa-code"></i>
+              <span>Web & Cloud</span>
+            </div>
+
+            <!-- Floating Quick Stats Pill -->
+            <div class="floating-stat-card">
+              <div class="stat-icon-circle">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="stat-text-group">
+                <span class="stat-number">6 Papers</span>
+                <span class="stat-label">Published Researcher</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="container stats-strip">
+        <div class="stat-box">
+          <div class="stat-value">6+</div>
+          <div class="stat-desc">Research Papers Published</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <div class="stat-value">1+</div>
+          <div class="stat-desc">Year IT Officer Experience</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <div class="stat-value">10+</div>
+          <div class="stat-desc">AI, IoT & Web Projects</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <div class="stat-value">1st</div>
+          <div class="stat-desc">Conference Poster Award</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Biography & Background</span>
+          <h2 class="section-title">Dedicated to Solving Real-World Challenges</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column">
+            <h3 class="about-lead">
+              A disciplined Computer Science & Engineering graduate blending industrial IT operations with scientific innovation.
+            </h3>
+            <p class="about-paragraph">
+              I hold a <strong>Bachelor of Science in Computer Science and Engineering</strong> from City University, 
+              backed by hands-on industry tenure as an <strong>IT Officer at Nirjaas Group</strong>. My daily professional 
+              scope spans enterprise website engineering, server and hosting infrastructure, database maintenance, network troubleshooting, 
+              and machine learning pipeline deployment.
+            </p>
+            <p class="about-paragraph">
+              Beyond operational IT, my academic and research journey has yielded <strong>6 peer-reviewed scientific publications</strong>. 
+              My research interests center on <em>IoT environmental monitoring</em>, <em>deep-learning biometric vision (MTCNN & DenseNet)</em>, 
+              <em>autonomous robotics</em>, and non-invasive <em>microstrip patch antenna biosensing</em> for blood glucose tracking.
+            </p>
+
+            <div class="signature-box">
+              <div class="signature-meta">
+                <span class="sig-name">Md Sazzad Hossen</span>
+                <span class="sig-title">IT Officer & Academic Researcher</span>
+              </div>
+              <img src="assets/images/signature.png" alt="Signature of Md Sazzad Hossen" class="sig-img">
+            </div>
+          </div>
+
+          <div class="about-info-column">
+            <!-- Pillars Grid -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <h4>IT Infrastructure & Security</h4>
+                <p>Linux/Windows server configuration, network troubleshooting, database security, and system backups.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-robot"></i></div>
+                <h4>AI & Machine Learning</h4>
+                <p>MTCNN, DenseNet, NLP sentiment analysis, predictive modeling, data cleaning, and deployment.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-wifi"></i></div>
+                <h4>IoT & Embedded Systems</h4>
+                <p>Sensor arrays, ESP32/Arduino microcontroller firmware, wireless data telemetry, and Proteus design.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h4>Full-Stack Web Engineering</h4>
+                <p>Laravel framework, PHP (OOP), JavaScript, dynamic REST APIs, MySQL, and responsive frontend design.</p>
+              </div>
+            </div>
+
+            <!-- Quick Contacts Card -->
+            <div class="quick-contact-card">
+              <div class="quick-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="qc-label">Location</span>
+                  <span class="qc-value">Dhaka Cantonment, Dhaka-1206, Bangladesh</span>
+                </div>
+              </div>
+              <div class="quick-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="qc-label">Email</span>
+                  <span class="qc-value">mdsazzadhossen31200@gmail.com</span>
+                </div>
+              </div>
+              <div class="quick-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span class="qc-label">Phone</span>
+                  <span class="qc-value">(+880) 01521256896</span>
+                </div>
+              </div>
+              <div class="quick-contact-item">
+                <i class="fa-solid fa-language"></i>
+                <div>
+                  <span class="qc-label">Languages</span>
+                  <span class="qc-value">Bengali (Native), English (Professional)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Career Path</span>
+          <h2 class="section-title">Work Experience & Internships</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Nirjaas Group -->
+          <div class="timeline-item active-role">
+            <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge badge-current">Current Position</span>
+                  <h3 class="timeline-role">Information Technology Officer (IT Officer)</h3>
+                  <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Nirjaas Group <span class="location-tag">Dhaka, Bangladesh</span></h4>
+                </div>
+                <div class="timeline-date">
+                  <i class="fa-regular fa-calendar"></i> 23/09/2023 – Present
+                </div>
+              </div>
+
+              <p class="timeline-summary">
+                Directing IT operations, web presence, database reliability, and machine learning initiatives for the organization.
+              </p>
+
+              <div class="role-highlights-grid">
+                <div class="role-duty">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>Full-Cycle Web Development:</strong> Engineering frontend and backend systems, conducting site optimization, regular security patching, and uptime monitoring.
+                  </div>
+                </div>
+                <div class="role-duty">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>Website Maintenance & Security:</strong> Managing continuous web security policies, resolving anomalies, and safeguarding customer databases.
+                  </div>
+                </div>
+                <div class="role-duty">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>Server & Hosting Administration:</strong> Configuring server environments, DNS records, hosting servers, SSL certifications, and cloud backup systems.
+                  </div>
+                </div>
+                <div class="role-duty">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>Machine Learning & AI Assistant:</strong> Preparing datasets, preprocessing exploratory data, assisting model development, and testing deployment workflows.
+                  </div>
+                </div>
+                <div class="role-duty">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>Data Analyst:</strong> Executing structured data cleaning, interpreting trends, visualizing KPIs, and presenting analytical reports for management decision-making.
+                  </div>
+                </div>
+                <div class="role-duty">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <div>
+                    <strong>IT Infrastructure & Technical Support:</strong> Maintaining hardware/software fleets, LAN/WAN networking, and resolving departmental technical issues.
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-tags">
+                <span>Web Development</span>
+                <span>Server Management</span>
+                <span>Python & ML</span>
+                <span>Data Analytics</span>
+                <span>Network Security</span>
+                <span>IT Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Machine Learning Internship -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-brain"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Online Internship</span>
+                  <h3 class="timeline-role">Machine Learning Intern</h3>
+                  <h4 class="timeline-company"><i class="fa-solid fa-code"></i> CodeAlpha</h4>
+                </div>
+                <div class="timeline-date">
+                  <i class="fa-regular fa-calendar"></i> Machine Learning Program
+                </div>
+              </div>
+              <p class="timeline-summary">
+                Completed 4 end-to-end machine learning and deep learning applications covering finance, healthcare, vision, and speech processing using Python:
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>Credit Risk Scoring:</strong> Predictive financial classification model evaluating borrower reliability and default risk.</li>
+                <li><strong>Disease Diagnosis:</strong> Deep learning diagnostic system assisting early clinical identification.</li>
+                <li><strong>Handwriting Recognition:</strong> Convolutional neural network architecture for digit and character transcription.</li>
+                <li><strong>Emotion Detection:</strong> Speech/visual multi-modal emotional feature extraction and classification.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Python</span>
+                <span>Deep Learning</span>
+                <span>Computer Vision</span>
+                <span>Risk Scoring</span>
+                <span>Neural Networks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Data Science Internship -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Online Internship</span>
+                  <h3 class="timeline-role">Data Science Intern</h3>
+                  <h4 class="timeline-company"><i class="fa-solid fa-chart-pie"></i> CodeAlpha</h4>
+                </div>
+                <div class="timeline-date">
+                  <i class="fa-regular fa-calendar"></i> Data Science Program
+                </div>
+              </div>
+              <p class="timeline-summary">
+                Built and evaluated 4 complete ML & exploratory data analysis systems using Python, Pandas, Scikit-learn, and Matplotlib/Seaborn:
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>Flower Classification:</strong> Multi-class botanical classification with feature optimization.</li>
+                <li><strong>Unemployment Analysis:</strong> Socio-economic statistical data analysis, temporal trend modeling, and visualization.</li>
+                <li><strong>Car Price Prediction:</strong> Regression modeling utilizing multi-variable feature engineering.</li>
+                <li><strong>Sales Forecasting:</strong> Time-series trend estimation for retail revenue projection.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Data Science</span>
+                <span>Exploratory Data Analysis (EDA)</span>
+                <span>Feature Engineering</span>
+                <span>Regression</span>
+                <span>Pandas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: BASIS SEIP Tranche 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-brands fa-laravel"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Professional Training</span>
+                  <h3 class="timeline-role">Web Developer Trainee (PHP & Laravel)</h3>
+                  <h4 class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> BASIS SEIP Tranche 3 Project (BITM) <span class="location-tag">Dhaka, Bangladesh</span></h4>
+                </div>
+                <div class="timeline-date">
+                  <i class="fa-regular fa-calendar"></i> 15/04/2023 – 27/06/2023
+                </div>
+              </div>
+              <p class="timeline-summary">
+                Intensive professional development track supported by the Asian Development Bank (ADB) and BASIS Institute of Technology & Management:
+              </p>
+              <ul class="timeline-bullets">
+                <li>Mastered Object-Oriented Programming (OOP) in PHP, MVC architecture, and dynamic database relations.</li>
+                <li>Architected scalable web apps using Laravel framework, Blade templates, Eloquent ORM, and RESTful APIs.</li>
+                <li>Awarded official certification of excellence upon project defense.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>PHP OOP</span>
+                <span>Laravel Framework</span>
+                <span>MySQL</span>
+                <span>MVC Architecture</span>
+                <span>ADB Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH PUBLICATIONS SECTION -->
+    <section class="section publications-section" id="publications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Research</span>
+          <h2 class="section-title">Peer-Reviewed Publications</h2>
+          <p class="section-lead-text">
+            Author and co-author of 6 research articles published in international journals, focusing on Internet of Things (IoT), 
+            Artificial Intelligence, Biometric Security, and Natural Language Processing.
+          </p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="publications-wrapper">
+          <!-- Publication 1 -->
+          <div class="pub-card glass-card" data-pub-id="1">
+            <div class="pub-header">
+              <div class="pub-badge-group">
+                <span class="pub-year-badge"><i class="fa-regular fa-calendar"></i> 2024</span>
+                <span class="pub-journal-badge">JNCS</span>
+                <span class="pub-category-badge">IoT & Healthcare</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" class="pub-scholar-link" title="Open on Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+              </a>
+            </div>
+
+            <h3 class="pub-title">IoT Based Air Quality Monitoring and Notification System</h3>
+            
+            <p class="pub-authors">
+              <i class="fa-solid fa-users"></i>
+              <span>Md Ataullah Bhuiyan, <strong>Md Sazzad Hossen</strong>, Mahir Labib Hossain</span>
+            </p>
+            
+            <div class="pub-journal-info">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Journal of Networking and Communication Systems</span>
+            </div>
+
+            <p class="pub-abstract-preview">
+              Investigates real-time ambient particulate and gaseous pollutant detection utilizing calibrated IoT sensor arrays and automated threshold alert mechanisms for urban smart city monitoring.
+            </p>
+
+            <div class="pub-footer">
+              <div class="pub-tags">
+                <span>IoT Sensors</span>
+                <span>Microcontrollers</span>
+                <span>Telemetry</span>
+                <span>Air Quality</span>
+              </div>
+              <button class="btn-text-action view-pub-btn" onclick="openPubModal(1)">
+                <span>View Synopsis</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Publication 2 -->
+          <div class="pub-card glass-card" data-pub-id="2">
+            <div class="pub-header">
+              <div class="pub-badge-group">
+                <span class="pub-year-badge"><i class="fa-regular fa-calendar"></i> 2024</span>
+                <span class="pub-journal-badge">JCMP</span>
+                <span class="pub-category-badge">Renewable Energy</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" class="pub-scholar-link" title="Open on Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+              </a>
+            </div>
+
+            <h3 class="pub-title">IoT Based Solar Energy Collecting as Alternative Energy Source and Monitoring System</h3>
+            
+            <p class="pub-authors">
+              <i class="fa-solid fa-users"></i>
+              <span><strong>Md Sazzad Hossen</strong>, Mahir Labib Hossain, Md. Tafhim Sadman Islam, Mehedi Hassan</span>
+            </p>
+            
+            <div class="pub-journal-info">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Journal of Computational Mechanics, Power System and Control</span>
+            </div>
+
+            <p class="pub-abstract-preview">
+              Proposes a smart photovoltaic collection framework tracking solar orientation, real-time voltage/current yield, and automated battery charging state via cloud-connected microcontrollers.
+            </p>
+
+            <div class="pub-footer">
+              <div class="pub-tags">
+                <span>Solar IoT</span>
+                <span>Renewable Energy</span>
+                <span>Power System</span>
+                <span>Efficiency</span>
+              </div>
+              <button class="btn-text-action view-pub-btn" onclick="openPubModal(2)">
+                <span>View Synopsis</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Publication 3 -->
+          <div class="pub-card glass-card" data-pub-id="3">
+            <div class="pub-header">
+              <div class="pub-badge-group">
+                <span class="pub-year-badge"><i class="fa-regular fa-calendar"></i> 2024</span>
+                <span class="pub-journal-badge">JNCS</span>
+                <span class="pub-category-badge">Cybersecurity & ML</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" class="pub-scholar-link" title="Open on Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+              </a>
+            </div>
+
+            <h3 class="pub-title">Phishing Website Detection System Using Machine Learning</h3>
+            
+            <p class="pub-authors">
+              <i class="fa-solid fa-users"></i>
+              <span>Md. Arif Khan, <strong>Md Sazzad Hossen</strong>, Md Ataullah Bhuiyan, Mahir Labib Hossain</span>
+            </p>
+            
+            <div class="pub-journal-info">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Journal of Networking and Communication Systems</span>
+            </div>
+
+            <p class="pub-abstract-preview">
+              Employs feature extraction heuristics on URL structures, SSL attributes, and webpage DOM elements combined with supervised classifiers to detect malicious phishing websites accurately.
+            </p>
+
+            <div class="pub-footer">
+              <div class="pub-tags">
+                <span>Machine Learning</span>
+                <span>Cybersecurity</span>
+                <span>Phishing Detection</span>
+                <span>Classifiers</span>
+              </div>
+              <button class="btn-text-action view-pub-btn" onclick="openPubModal(3)">
+                <span>View Synopsis</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Publication 4 -->
+          <div class="pub-card glass-card" data-pub-id="4">
+            <div class="pub-header">
+              <div class="pub-badge-group">
+                <span class="pub-year-badge"><i class="fa-regular fa-calendar"></i> 2024</span>
+                <span class="pub-journal-badge">JNCS</span>
+                <span class="pub-category-badge">AI Robotics</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" class="pub-scholar-link" title="Open on Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+              </a>
+            </div>
+
+            <h3 class="pub-title">IoT Based Live Streaming and Object Detecting AI Robotic Car</h3>
+            
+            <p class="pub-authors">
+              <i class="fa-solid fa-users"></i>
+              <span>Md. Ohahiduzzaman, Md. Fahim, Mahir Labib Hossain, Md Ataullah Bhuiyan, <strong>Md Sazzad Hossen</strong></span>
+            </p>
+            
+            <div class="pub-journal-info">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Journal of Networking and Communication Systems</span>
+            </div>
+
+            <p class="pub-abstract-preview">
+              Presents an embedded robotic vehicle incorporating low-latency Wi-Fi video streaming, computer vision object identification, and real-time obstacle navigation algorithms.
+            </p>
+
+            <div class="pub-footer">
+              <div class="pub-tags">
+                <span>Robotics</span>
+                <span>Object Detection</span>
+                <span>Live Streaming</span>
+                <span>Computer Vision</span>
+              </div>
+              <button class="btn-text-action view-pub-btn" onclick="openPubModal(4)">
+                <span>View Synopsis</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Publication 5 -->
+          <div class="pub-card glass-card award-winning-pub" data-pub-id="5">
+            <div class="pub-header">
+              <div class="pub-badge-group">
+                <span class="pub-year-badge"><i class="fa-regular fa-calendar"></i> 2025</span>
+                <span class="pub-journal-badge">JNCS</span>
+                <span class="pub-award-badge"><i class="fa-solid fa-trophy"></i> Poster Award</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" class="pub-scholar-link" title="Open on Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+              </a>
+            </div>
+
+            <h3 class="pub-title">Face Detection with MTCNN Using DenseNet for Enhanced Security</h3>
+            
+            <p class="pub-authors">
+              <i class="fa-solid fa-users"></i>
+              <span>Mehedi Hassan, Arnob Biswas, Nayem Al Hakim, SK Al Nahia Samin, <strong>Md Sazzad Hossen</strong></span>
+            </p>
+            
+            <div class="pub-journal-info">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Journal of Networking and Communication Systems</span>
+            </div>
+
+            <p class="pub-abstract-preview">
+              Combines Multi-Task Cascaded Convolutional Networks (MTCNN) for bounding facial alignment with DenseNet deep feature extraction, achieving high-accuracy recognition under complex illuminations.
+            </p>
+
+            <div class="pub-footer">
+              <div class="pub-tags">
+                <span>MTCNN</span>
+                <span>DenseNet</span>
+                <span>Biometrics</span>
+                <span>Deep Learning</span>
+              </div>
+              <button class="btn-text-action view-pub-btn" onclick="openPubModal(5)">
+                <span>View Synopsis</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Publication 6 -->
+          <div class="pub-card glass-card" data-pub-id="6">
+            <div class="pub-header">
+              <div class="pub-badge-group">
+                <span class="pub-year-badge"><i class="fa-regular fa-calendar"></i> 2025</span>
+                <span class="pub-journal-badge">JNCS</span>
+                <span class="pub-category-badge">NLP & Text Mining</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" class="pub-scholar-link" title="Open on Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+              </a>
+            </div>
+
+            <h3 class="pub-title">Sentiment Analysis with Text Mining: A Study from the Newspaper Contents of Bangladesh</h3>
+            
+            <p class="pub-authors">
+              <i class="fa-solid fa-users"></i>
+              <span>Maisha Mumtaj, Mehedi Hassan, SK Al Nahian Samin, Auchto Dey, <strong>Md Sazzad Hossen</strong></span>
+            </p>
+            
+            <div class="pub-journal-info">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Journal of Networking and Communication Systems</span>
+            </div>
+
+            <p class="pub-abstract-preview">
+              Explores Bangla and English national journalism corpora through NLP tokenization, polarity scoring, and sentiment classification to analyze public socio-economic perception.
+            </p>
+
+            <div class="pub-footer">
+              <div class="pub-tags">
+                <span>Sentiment Analysis</span>
+                <span>Text Mining</span>
+                <span>NLP</span>
+                <span>Bengali News Corpus</span>
+              </div>
+              <button class="btn-text-action view-pub-btn" onclick="openPubModal(6)">
+                <span>View Synopsis</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Scholar Banner -->
+        <div class="scholar-banner glass-card">
+          <div class="scholar-banner-text">
+            <h3><i class="fa-brands fa-google-scholar"></i> Verified Google Scholar Profile</h3>
+            <p>Access citations, full bibliographies, co-authors, and metrics indexed globally.</p>
+          </div>
+          <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn-primary">
+            Visit Google Scholar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Engineering Portfolio</span>
+          <h2 class="section-title">Featured Projects & Innovations</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filter-tabs">
+          <button class="filter-tab active" data-filter="all">All Projects</button>
+          <button class="filter-tab" data-filter="ai">AI & Computer Vision</button>
+          <button class="filter-tab" data-filter="iot">IoT & Hardware</button>
+          <button class="filter-tab" data-filter="web">Web & Software Systems</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: IoT Air Quality -->
+          <div class="project-card glass-card" data-category="iot">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_air_quality.jpg" alt="IoT Air Quality Monitoring" class="project-img">
+              <span class="project-badge">Published & Thesis</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">IoT Air Quality Monitoring & Alert System</h3>
+              <p class="project-description">
+                Engineered an IoT-enabled environmental monitoring hub with calibrated gas/particulate sensors, 
+                real-time cloud telemetry, and automated SMS/email alert thresholds for unhealthy AQI indices.
+              </p>
+              <div class="project-tags">
+                <span>ESP32</span>
+                <span>Gas Sensors (MQ)</span>
+                <span>OLED Display</span>
+                <span>Cloud Telemetry</span>
+                <span>C++ / Arduino</span>
+              </div>
+              <div class="project-links">
+                <a href="#publications" class="project-link-btn"><i class="fa-solid fa-file-lines"></i> Research Paper</a>
+                <button class="project-link-btn" onclick="openProjectDetails('air_quality')"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Face Detection MTCNN -->
+          <div class="project-card glass-card" data-category="ai">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_face_detect.jpg" alt="MTCNN DenseNet Face Detection" class="project-img">
+              <span class="project-badge award-badge"><i class="fa-solid fa-trophy"></i> Conference Award</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MTCNN & DenseNet Biometric Security System</h3>
+              <p class="project-description">
+                Award-winning deep learning face verification pipeline leveraging MTCNN for fast landmark alignment 
+                and DenseNet deep feature representations for high-fidelity facial authentication in security surveillance.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>PyTorch / Keras</span>
+                <span>MTCNN</span>
+                <span>DenseNet</span>
+                <span>OpenCV</span>
+              </div>
+              <div class="project-links">
+                <a href="#publications" class="project-link-btn"><i class="fa-solid fa-award"></i> Poster Award</a>
+                <button class="project-link-btn" onclick="openProjectDetails('face_detect')"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Microstrip Patch Antenna Glucose -->
+          <div class="project-card glass-card" data-category="iot">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_antenna_health.jpg" alt="Microstrip Patch Antenna Glucose Monitoring" class="project-img">
+              <span class="project-badge badge-active">Ongoing Innovation</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Microstrip Patch Antenna for Glucose Sensing</h3>
+              <p class="project-description">
+                Designing and optimizing a medical RF patch antenna leveraging dielectric permittivity shifts in human blood 
+                to quantify glucose levels non-invasively without physical blood sampling or painful finger pricks.
+              </p>
+              <div class="project-tags">
+                <span>RF Antenna Design</span>
+                <span>Permittivity Analysis</span>
+                <span>Biomedical Sensing</span>
+                <span>Proteus / HFSS</span>
+              </div>
+              <div class="project-links">
+                <button class="project-link-btn" onclick="openProjectDetails('antenna')"><i class="fa-solid fa-circle-info"></i> Research Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Autonomous Robotic Car -->
+          <div class="project-card glass-card" data-category="ai iot">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_robotic_car.jpg" alt="AI Robotic Car" class="project-img">
+              <span class="project-badge">Published Paper</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Autonomous AI Robotic Car with Live Streaming</h3>
+              <p class="project-description">
+                Equipped an intelligent robotic vehicular chassis with low-latency Wi-Fi video streaming, computer vision 
+                object detection, and autonomous navigation for surveillance in remote and hazardous locations.
+              </p>
+              <div class="project-tags">
+                <span>Robotics</span>
+                <span>Computer Vision</span>
+                <span>Wi-Fi Streaming</span>
+                <span>Object Tracking</span>
+                <span>Embedded C</span>
+              </div>
+              <div class="project-links">
+                <a href="#publications" class="project-link-btn"><i class="fa-solid fa-file-lines"></i> Published Paper</a>
+                <button class="project-link-btn" onclick="openProjectDetails('robotic_car')"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: COVID-19 Information Management -->
+          <div class="project-card glass-card" data-category="web">
+            <div class="project-img-wrapper project-icon-banner">
+              <div class="banner-icon-circle"><i class="fa-solid fa-hospital-user"></i></div>
+              <span class="project-badge">Healthcare System</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">COVID-19 Information Management System</h3>
+              <p class="project-description">
+                Developed a full-featured web-based clinical database tracking patient records, ICU bed availability, 
+                diagnostic test scheduling, and analytical reporting for healthcare decision makers.
+              </p>
+              <div class="project-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>Data Analytics</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <button class="project-link-btn" onclick="openProjectDetails('covid')"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Smart Campus Monitoring -->
+          <div class="project-card glass-card" data-category="iot web">
+            <div class="project-img-wrapper project-icon-banner campus-banner">
+              <div class="banner-icon-circle"><i class="fa-solid fa-school"></i></div>
+              <span class="project-badge">University Showcase</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Campus Monitoring System</h3>
+              <p class="project-description">
+                Designed an IoT network monitoring classroom occupancy, electricity consumption, and ambient room metrics 
+                in real time to boost campus sustainability and security. Showcased at City University Project Expo.
+              </p>
+              <div class="project-tags">
+                <span>IoT Sensors</span>
+                <span>Energy Tracking</span>
+                <span>Web Dashboard</span>
+                <span>Automation</span>
+              </div>
+              <div class="project-links">
+                <button class="project-link-btn" onclick="openProjectDetails('smart_campus')"><i class="fa-solid fa-circle-info"></i> Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Core Proficiencies</span>
+          <h2 class="section-title">Technical Expertise & Toolset</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: AI & ML -->
+          <div class="skill-category-card glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>AI & Machine Learning</h3>
+            </div>
+            <p class="skill-cat-desc">Model development, training, computer vision, data analysis, and predictive workflows.</p>
+            <div class="skill-pill-container">
+              <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-pill">Deep Learning</span>
+              <span class="skill-pill">Computer Vision</span>
+              <span class="skill-pill">MTCNN</span>
+              <span class="skill-pill">DenseNet</span>
+              <span class="skill-pill">NLP & Text Mining</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">EDA & Data Cleaning</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Programming & Web -->
+          <div class="skill-category-card glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Web & Programming</h3>
+            </div>
+            <p class="skill-cat-desc">Full-cycle web application development, dynamic architectures, and object-oriented coding.</p>
+            <div class="skill-pill-container">
+              <span class="skill-pill"><i class="fa-brands fa-php"></i> PHP (OOP)</span>
+              <span class="skill-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
+              <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+              <span class="skill-pill"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+              <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="skill-pill">C / C++</span>
+              <span class="skill-pill">RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Database & Cloud -->
+          <div class="skill-category-card glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Database & DevOps</h3>
+            </div>
+            <p class="skill-cat-desc">Relational databases, NoSQL schemas, containerization, and version control.</p>
+            <div class="skill-pill-container">
+              <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL / MySQL</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-pill">Linux / Windows Server</span>
+              <span class="skill-pill">Hosting & DNS</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: IoT & Hardware -->
+          <div class="skill-category-card glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-microchip"></i></div>
+              <h3>IoT & Hardware Design</h3>
+            </div>
+            <p class="skill-cat-desc">Microcontroller firmware, circuit simulation, antenna design, and telemetry arrays.</p>
+            <div class="skill-pill-container">
+              <span class="skill-pill">ESP32 & Arduino</span>
+              <span class="skill-pill">Microstrip Antenna</span>
+              <span class="skill-pill">Proteus Simulation</span>
+              <span class="skill-pill">Digital Image Processing</span>
+              <span class="skill-pill">Microprocessors</span>
+              <span class="skill-pill">Assembly Language</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: IT Support & Networking -->
+          <div class="skill-category-card glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>IT Support & Networking</h3>
+            </div>
+            <p class="skill-cat-desc">Enterprise system administration, troubleshooting, network security, and data backups.</p>
+            <div class="skill-pill-container">
+              <span class="skill-pill">System Administration</span>
+              <span class="skill-pill">Network Protocols</span>
+              <span class="skill-pill">Hardware Troubleshooting</span>
+              <span class="skill-pill">Security Policies</span>
+              <span class="skill-pill">Data Backup Strategies</span>
+              <span class="skill-pill">Technical User Support</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: Research & Soft Skills -->
+          <div class="skill-category-card glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3>Research & Leadership</h3>
+            </div>
+            <p class="skill-cat-desc">Scientific manuscript preparation, cross-team coordination, and project execution.</p>
+            <div class="skill-pill-container">
+              <span class="skill-pill">Research Paper Writing</span>
+              <span class="skill-pill">Literature Review</span>
+              <span class="skill-pill">Team Leadership</span>
+              <span class="skill-pill">Critical Thinking</span>
+              <span class="skill-pill">Technical Documentation</span>
+              <span class="skill-pill">Agile Project Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Credentials</span>
+          <h2 class="section-title">Education, Awards & Certifications</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="edu-awards-grid">
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-subtitle"><i class="fa-solid fa-user-graduate"></i> Formal Education</h3>
+            
+            <div class="edu-card glass-card">
+              <div class="edu-year">2019 – 2023</div>
+              <h4 class="edu-degree">B.Sc. in Computer Science and Engineering</h4>
+              <h5 class="edu-institution"><a href="http://www.cityuniversity.ac.bd" target="_blank" rel="noopener">City University, Bangladesh</a></h5>
+              <div class="edu-meta">
+                <span class="meta-pill"><i class="fa-solid fa-star"></i> CGPA: 2.73 / 4.00</span>
+                <span class="meta-pill"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+              </div>
+              <div class="thesis-box">
+                <strong>Undergraduate Thesis:</strong> 
+                <em>"IoT Based Air Quality Monitoring and Notification System"</em>
+              </div>
+              <div class="coursework-list">
+                <span class="cw-title">Relevant Coursework:</span>
+                <p>Data Structures, Algorithms, Discrete Mathematics, DBMS, Operating Systems, Computer Networks, Software Engineering, Artificial Intelligence, Microprocessors & Assembly, Computer Architecture, Advanced Java, Web Database Programming, SQA.</p>
+              </div>
+            </div>
+
+            <div class="edu-card glass-card">
+              <div class="edu-year">2014 – 2016</div>
+              <h4 class="edu-degree">Higher Secondary Certificate (HSC)</h4>
+              <h5 class="edu-institution"><a href="https://acc.edu.bd" target="_blank" rel="noopener">Adamjee Cantonment College</a></h5>
+              <div class="edu-meta">
+                <span class="meta-pill"><i class="fa-solid fa-star"></i> Final GPA: 4.67 / 5.00</span>
+                <span class="meta-pill"><i class="fa-solid fa-flask"></i> Science Group</span>
+              </div>
+            </div>
+
+            <div class="edu-card glass-card">
+              <div class="edu-year">2012 – 2014</div>
+              <h4 class="edu-degree">Secondary School Certificate (SSC)</h4>
+              <h5 class="edu-institution"><a href="https://www.mmacademy.edu.bd" target="_blank" rel="noopener">Muslim Modern Academy</a></h5>
+              <div class="edu-meta">
+                <span class="meta-pill"><i class="fa-solid fa-star"></i> Final GPA: 5.00 / 5.00 (Golden A+)</span>
+                <span class="meta-pill"><i class="fa-solid fa-flask"></i> Science Group</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Awards & Certifications Column -->
+          <div class="cert-column">
+            <h3 class="column-subtitle"><i class="fa-solid fa-trophy"></i> Honours & Certifications</h3>
+
+            <!-- Key Award -->
+            <div class="award-card glass-card highlight-award">
+              <div class="award-badge-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div class="award-content">
+                <span class="award-date">27 February 2024</span>
+                <h4>Poster Award: Multidisciplinary Research</h4>
+                <p class="award-org">CDE Annual Conference 2024 — Science and Development through Multidisciplinary Research</p>
+                <p class="award-desc">Recognized for the pioneering research paper: <em>"Improved Security Solutions with MTCNN and DenseNet Face Detection"</em>.</p>
+              </div>
+            </div>
+
+            <!-- Certifications List -->
+            <div class="cert-list">
+              <div class="cert-item glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="cert-info">
+                  <h4>Introduction to Modern AI Course</h4>
+                  <span class="cert-issuer">Cisco Networking Academy</span>
+                </div>
+              </div>
+
+              <div class="cert-item glass-card">
+                <div class="cert-icon"><i class="fa-brands fa-laravel"></i></div>
+                <div class="cert-info">
+                  <h4>PHP with Laravel Framework (BASIS SEIP Tranche 3)</h4>
+                  <span class="cert-issuer">Asian Development Bank (ADB) & BITM</span>
+                </div>
+              </div>
+
+              <div class="cert-item glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-comments"></i></div>
+                <div class="cert-info">
+                  <h4>English Communication Skills</h4>
+                  <span class="cert-issuer">BASIS Institute of Training & Management (BITM)</span>
+                </div>
+              </div>
+
+              <div class="cert-item glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                <div class="cert-info">
+                  <h4>Software Testing & Quality Assurance Career Path</h4>
+                  <span class="cert-issuer">City University</span>
+                </div>
+              </div>
+
+              <div class="cert-item glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="cert-info">
+                  <h4>SQL Intermediate Certification</h4>
+                  <span class="cert-issuer">SoloLearn</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Extracurricular -->
+            <h3 class="column-subtitle extra-heading"><i class="fa-solid fa-people-group"></i> Leadership & Scouting</h3>
+            <div class="extra-list">
+              <div class="extra-item glass-card">
+                <span class="extra-role">Vice President (2021 – 2023)</span>
+                <h4>Randon Science Club</h4>
+                <p>Managed club operations, organized technology workshops, and guided student project showcases.</p>
+              </div>
+              <div class="extra-item glass-card">
+                <span class="extra-role">Programmer (2019 – 2023)</span>
+                <h4>City University Programming Club</h4>
+                <p>Secured 18th position in Inter-Batch Programming Contest (solved 5 algorithmic problems in C/C++).</p>
+              </div>
+              <div class="extra-item glass-card">
+                <span class="extra-role">Scouting (2012 – 2019)</span>
+                <h4>Bangladesh Sea Scout</h4>
+                <p>7 years of active scouting, leadership camps, and civic disaster relief initiatives.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS / TESTIMONIALS SECTION -->
+    <section class="section recommendations-section" id="recommendations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic & Industrial Endorsements</span>
+          <h2 class="section-title">Letters of Recommendation</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="recommendations-grid">
+          <!-- Recommendation 1: University Thesis Supervisor -->
+          <div class="rec-card glass-card">
+            <div class="rec-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="rec-text">
+              "I have known him for several years. He completed his thesis under my supervision and is also actively 
+              working on its publication in an international journal. I also instructed him in the Microprocessor and 
+              Assembly Language course; that is why I highly recommend him."
+            </p>
+            <div class="rec-author">
+              <div class="rec-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="rec-meta">
+                <h4 class="rec-name">Md Ataullah Bhuiyan</h4>
+                <span class="rec-title">Associate Professor, Department of CSE</span>
+                <span class="rec-org">City University, Bangladesh</span>
+                <div class="rec-contact-info">
+                  <a href="mailto:mdataullahbhuiyan.cityuni@yahoo.com"><i class="fa-solid fa-envelope"></i> mdataullahbhuiyan.cityuni@yahoo.com</a>
+                  <span><i class="fa-solid fa-phone"></i> +880 01843906686</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommendation 2: Nirjaas Group IT Head -->
+          <div class="rec-card glass-card">
+            <div class="rec-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="rec-text">
+              "I have known him for several years at Nirjaas Group. He is hardworking, dedicated, and technically skilled 
+              across both software engineering and infrastructure management. I highly recommend him for higher studies 
+              abroad and am confident in his future academic and professional success."
+            </p>
+            <div class="rec-author">
+              <div class="rec-avatar"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="rec-meta">
+                <h4 class="rec-name">Md Aminul Islam</h4>
+                <span class="rec-title">Head of Information Technology (IT Head)</span>
+                <span class="rec-org">Nirjaas Group</span>
+                <div class="rec-contact-info">
+                  <a href="mailto:mdaminulislam531998@gmail.com"><i class="fa-solid fa-envelope"></i> mdaminulislam531998@gmail.com</a>
+                  <span><i class="fa-solid fa-phone"></i> +880 01340109456</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Collaborate on Research & Tech</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-col">
+            <h3 class="contact-col-title">Direct Communication</h3>
+            <p class="contact-col-desc">
+              Whether you are looking to collaborate on research, explore machine learning and IoT architectures, 
+              or discuss career opportunities, feel free to reach out directly.
+            </p>
+
+            <div class="contact-cards-stack">
+              <!-- Email Card with Copy Button -->
+              <div class="contact-channel-card glass-card">
+                <div class="channel-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="channel-content">
+                  <span class="channel-label">Email Address</span>
+                  <span class="channel-data" id="text-email">mdsazzadhossen31200@gmail.com</span>
+                </div>
+                <button class="btn-copy" onclick="copyToClipboard('mdsazzadhossen31200@gmail.com', 'Email copied!')" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Phone Card with Copy Button -->
+              <div class="contact-channel-card glass-card">
+                <div class="channel-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="channel-content">
+                  <span class="channel-label">Phone & WhatsApp</span>
+                  <span class="channel-data" id="text-phone">(+880) 01521256896</span>
+                </div>
+                <button class="btn-copy" onclick="copyToClipboard('+8801521256896', 'Phone number copied!')" title="Copy Phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Address Card -->
+              <div class="contact-channel-card glass-card">
+                <div class="channel-icon location-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="channel-content">
+                  <span class="channel-label">Current Address</span>
+                  <span class="channel-data">C/B 211/10 German Building, Dhaka Cantonment, Dhaka-1206</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Quick Action Buttons -->
+            <div class="quick-action-buttons">
+              <a href="https://wa.me/8801521256896" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+              <a href="https://www.linkedin.com/in/md-sazzad-hossen-931114211/" target="_blank" rel="noopener" class="btn btn-linkedin">
+                <i class="fa-brands fa-linkedin-in"></i> Message on LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-col">
+            <div class="form-container glass-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                  <label for="sender-name">Your Full Name <span class="req">*</span></label>
+                  <input type="text" id="sender-name" class="form-control" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email">Your Email Address <span class="req">*</span></label>
+                  <input type="email" id="sender-email" class="form-control" placeholder="e.g. john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-subject">Subject <span class="req">*</span></label>
+                  <input type="text" id="sender-subject" class="form-control" placeholder="e.g. Research Collaboration / Job Opportunity" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-message">Message Details <span class="req">*</span></label>
+                  <textarea id="sender-message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+
+                <div class="form-status-msg" id="form-status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-badge">SH</span>
+          <span class="brand-name">Md Sazzad Hossen</span>
+        </a>
+        <p class="footer-tagline">
+          IT Officer &middot; AI / ML &amp; IoT Researcher &middot; Full-Stack Web Engineer
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://scholar.google.com/citations?user=uaw0gPYAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+          <a href="https://github.com/sazzad125" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/md-sazzad-hossen-931114211/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:mdsazzadhossen31200@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Md Sazzad Hossen. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- MODAL FOR PUBLICATION & PROJECT DETAILS -->
+  <div class="modal-overlay" id="detail-modal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-card glass-card">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modal-content">
+        <!-- Dynamic content populated via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toast-notify"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
